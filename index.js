@@ -1,8 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const dotEnv = require("dotenv");
 
-dotEnv.config();
+const DATABASE_URL="mongodb+srv://eatandtreat:eatandtreat@eatandtreat.32ovs.mongodb.net/eatandtreat?retryWrites=true&w=majority"
+
 const app = express();
 
 app.use(express.json());
@@ -16,7 +16,7 @@ app.use(function (req, res, next) {
 });
 
 mongoose
-  .connect(process.env.DATABASE_URL, {
+  .connect(DATABASE_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
