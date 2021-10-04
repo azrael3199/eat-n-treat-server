@@ -1,0 +1,27 @@
+{
+  "name": "eat-n-treat-server",
+  "version": "1.0.0",
+  "description": "Server for Persistent Mini Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azrael3199/eat-n-treat-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azrael3199/eat-n-treat-server/issues"
+  },
+  "homepage": "https://github.com/azrael3199/eat-n-treat-server#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.2",
+    "mongoose": "^6.0.8",
+    "multer": "^1.4.3"
+  }
+}
